@@ -22,7 +22,7 @@ export const ListRow = ({id, image, name, price, active, seller}:Product) => {
                         <h3 className="text-black font-normal text-left col-span-2">{name}</h3>
 
                     <p className="font-normal text-black ">{seller}</p>
-                    <h3 className=" bg-cardGreenBg text-cardGreen rounded-full text-xs font-semibold px-3 py-1 mx-auto ">{active ? 'Active' : 'Inactive'}</h3>
+                    <h3 className=" bg-cardGreenBg text-cardGreen rounded-full text-xs font-semibold px-2 py-1 mx-auto ">{active ? 'Active' : 'Inactive'}</h3>
                     <p className="font-normal text-black">${price}</p>
                     <button className=" text-sm font-bold rounded-bl-lg text-cardButtonRed">Remove</button>
             </div>

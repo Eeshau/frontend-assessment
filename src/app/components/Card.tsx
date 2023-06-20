@@ -28,7 +28,7 @@ export const Card = ({id, image, name, price, active, description}:Product) => {
                 </div>
                 <div>
                     <p className="font-normal text-cardGreyText text-base">${price}</p>
-                    <h3 className=" bg-cardGreenBg text-cardGreen rounded-full text-xs font-semibold w-20 mx-auto mb-6">{active ? 'Active' : 'Inactive'}</h3>
+                    <h3 className=" bg-cardGreenBg text-cardGreen rounded-full text-xs font-semibold w-16 px-1 py-1 mx-auto mb-6">{active ? 'Active' : 'Inactive'}</h3>
                 </div>
             </div>
 
