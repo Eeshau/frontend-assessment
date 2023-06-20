@@ -13,12 +13,6 @@ import SideNav from '../../components/SideNav'
 
 interface Product {
     params: {id: string}; //item/[id] id in url
-    id: string;
-    name: string;
-    image: string;
-    price: string;
-    active: boolean;
-    description: string;
   }
 
 const inter = Inter({ 
