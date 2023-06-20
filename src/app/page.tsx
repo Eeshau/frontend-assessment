@@ -85,6 +85,7 @@ export default function Home() {
         <title>Card Page</title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
       </Head>
+      <SideNav/>
       <div className="bg-backgroundGrey min-h-screen col-span-4">
         <h1 className="text-4xl font-bold text-blueishBlack px-10 pt-5">Dashboard</h1>
         {DashboardSWR()}

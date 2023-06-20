@@ -1,5 +1,6 @@
 # Notes
 I installed the latest release of next.js, was getting some odd errors with the version provided
+
 Also for icons "npm install @mui/material @emotion/react @emotion/styled" and "npm install @mui/icons-material"
 
 ----------------------------------------------------------------------------------------------------------------

@@ -9,7 +9,6 @@ This page should be Server-Side Rendered with NextJS - load the items details fr
 
 import { Inter } from 'next/font/google';
 import Image from 'next/image';
-import styles from './page.module.css';
 import SideNav from '../../components/SideNav'
 
 interface Product {
@@ -36,7 +35,7 @@ async function fetchItem () {
 
 export default async function Item({params}:Product) {
 const items = await fetchItem(); //we do params.id[0] because catch all segment routes will be a list of routes, we want the first one i.e the id
-const item = items.products.find((p) => p.id === params.id[0]);
+const item = items.products.find((p: { id: string; }) => p.id === params.id[0]);
 console.log("ITEM DATA RESPONSE:" + " " + item + "-----------------------------------------");
 
   return (

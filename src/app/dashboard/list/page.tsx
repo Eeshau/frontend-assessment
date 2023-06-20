@@ -68,8 +68,8 @@ export default function Home() {
       <div className="grid grid-cols-1 gap-0.5 justify-center items-center bg-white p-6 rounded-md ">
         <div className="flex py-4">
           <div className="mr-auto">
-            <h1 className="font-semibold">Favorites</h1>
-            <p className="font-normal text-listBoxGreyText">A list of your favorites items to keep track of.</p>
+            <h1 className="font-semibold text-black">Favorites</h1>
+            <p className="font-normal text-listBoxGreyText mt-1">A list of your favorites items to keep track of.</p>
           </div>
           <button className="px-4 py-2 bg-buttonNeonBlue text-white rounded-md ml-auto">+ Add</button>
         </div>
