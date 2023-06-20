@@ -33,7 +33,7 @@ export const SideNav = () => {
 
         <div className="flex items-center bg-sidebarProfileBgGrey px-3 py-2"> 
           <div className="w-[45px] h-[45px] rounded-full relative flex-shrink-0">
-            <Image alt="Picture of user" src="https://images.unsplash.com/photo-1464375117522-1311d6a5b81f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2250&q=80" fill={true} className="rounded-full" />
+            <Image alt="Picture of user" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXuOLv0yZlZyzym1ZRZAAAh2B8bZLhqwDAUxrCpe1abjdYf-bt" fill={true} className="rounded-full" />
           </div>
           <div className="ml-2">
             <h3 className="text-sidebarWhite">Tom Cook</h3>

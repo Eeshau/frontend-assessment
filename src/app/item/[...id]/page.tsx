@@ -10,7 +10,6 @@ This page should be Server-Side Rendered with NextJS - load the items details fr
 import { Inter } from 'next/font/google';
 import Image from 'next/image';
 import SideNav from '../../components/SideNav'
-import { NextApiRequest } from 'next';
 
 interface Product {
     params: {id: string}; //item/[id] id in url
@@ -22,7 +21,7 @@ const inter = Inter({
 });
 
 
-async function fetchItem (req: NextApiRequest) {
+async function fetchItem () {
   const env = process.env.NODE_ENV
   if(env == "production"){
     const itemResponse = await fetch (`https://frontend-assessment-simplify.vercel.app/api/products`, {cache: "no-store"});
@@ -35,8 +34,8 @@ async function fetchItem (req: NextApiRequest) {
 }
 
 
-export default async function Item({params}:Product ,req: NextApiRequest) {
-const items = await fetchItem(req); //we do params.id[0] because catch all segment routes will be a list of routes, we want the first one [0] i.e the id
+export default async function Item({params}:Product) {
+const items = await fetchItem(); // do params.id[0] because catch all segment routes will be a list of routes, we want the first one [0] i.e the id
 const item = items.products.find((p: { id: string; }) => p.id === params.id[0]);
 console.log("ITEM DATA RESPONSE:" + " " + item + "-----------------------------------------");
 

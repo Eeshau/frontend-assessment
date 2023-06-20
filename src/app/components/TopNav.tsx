@@ -18,8 +18,8 @@ export const TopNav = () => {
                     <button className="">Cart</button>
                 </div>
                 <div className="grid grid-cols-2 flex items-center justify-center">
-                    <NotificationsOutlinedIcon/>
-                    <div className="rounded-full overflow-hidden w-[50px] h-[50px] relative"><Image alt="Picture of user" src="https://images.unsplash.com/photo-1464375117522-1311d6a5b81f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2250&q=80"  fill={true} className="rounded-full mx-auto" /></div>
+                    <NotificationsOutlinedIcon style={{ color: 'grey' }} fontSize="large"/>
+                    <div className="rounded-full overflow-hidden w-[45px] h-[45px] relative"><Image alt="Picture of user" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXuOLv0yZlZyzym1ZRZAAAh2B8bZLhqwDAUxrCpe1abjdYf-bt"  fill={true} className="rounded-full mx-auto" /></div>
                 </div>
             </div>
             <div className="border-t border-1 border-sidebarGrey h-px mt-4"></div>

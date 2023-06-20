@@ -9,7 +9,7 @@ export const metadata = {
 
 
 const inter = Inter({ 
-  weight: ["200","300","500","600"],
+  weight: ["200","300","400","500","600"],
   subsets: ['latin'] 
 })
 
